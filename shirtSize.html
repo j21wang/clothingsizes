@@ -115,14 +115,6 @@
                         sizeHip = Math.floor(sizeHip);
                         sizeHip = sizeHip + 'H';
                     }
-                    
-                    if((sizeHip - Math.floor(sizeHip)) == 0.75){
-                        sizeHip = Math.floor(sizeHip);
-                        sizeHip = sizeHip + 'H and ' + sizeHip2;
-                    }
-
-                    
-
                     pants = sizeHip;
                 }
                 
@@ -133,12 +125,6 @@
                         sizeLength = Math.floor(sizeLength);
                         sizeLength = sizeLength + 'H';
                     }
-
-                     if((sizeLength - Math.floor(sizeLength)) == 0.75){
-                        sizeLength = Math.floor(sizeLength);
-                        sizeLength = sizeLength + 'H and ' + sizeLength2;
-                    }
-
                     pants = sizeLength;
                 }
 
@@ -243,26 +229,24 @@
                     sizeHip == "Invalid input";
                     return sizeHip;
                 }
-                if(hip<=27) sizeHip = 4;
-                else if(hip<=28) sizeHip = 5;
-                else if(hip<=29) sizeHip = 6;
-                else if(hip<=29.5) sizeHip = 7;
+                if(hip<=26) sizeHip = 4;
+                else if(hip<=27.5) sizeHip = 5;
+                else if(hip<=28.5) sizeHip = 6;
+                else if(hip<=29) sizeHip = 7;
                 else if(hip<=30) sizeHip = 8;
-                else if(hip<=32) sizeHip = 10;
-                else if(hip<=33) sizeHip = 8.5;
-                else if(hip<=34) sizeHip = 12;
-                else if(hip<=35) sizeHip = 10.5;
-                else if(hip<=36) sizeHip = 14;
-                else if(hip<=37) sizeHip = 12.5;
-                else if(hip<=38) sizeHip = 16;
-                else if(hip<=39) sizeHip = 14.5;
-                else if(hip<=39.5) sizeHip = 18;
-                else if(hip<=41) {
-                    sizeHip = 16.75;
-                    sizeHip2 = 20;
-                }
-                else if(hip<=42.25) sizeHip = 18.5;
-                else if(hip<=43.5) sizeHip = 20.5;
+                else if(hip<=31) sizeHip = 10;
+                else if(hip<=32.5) sizeHip = 12;
+                else if(hip<=34) sizeHip = 8.5;
+                else if(hip<=34.5) sizeHip = 14;
+                else if(hip<=35.5) sizeHip = 10.5;
+                else if(hip<=36.75) sizeHip = 12.5;
+                else if(hip<=37.5) sizeHip = 16;
+                else if(hip<=38.25) sizeHip = 14.5;
+                else if(hip<=38.5) sizeHip = 18;
+                else if(hip<=39) sizeHip = 20;
+                else if(hip<=39.5) sizeHip = 16.5; 
+                else if(hip<=41) sizeHip = 18.5;
+                else if(hip<=42) sizeHip = 20.5;
                 else sizeHip = 500;
 
                 return sizeHip;
@@ -275,38 +259,24 @@
                     sizeLength == -1;
                     return;
                 }             
-                if(length<=24.25) sizeLength = 4;
-                else if(length<=26.125) sizeLength = 5;
-                else if(length<=27.5) sizeLength = 6;
-                else if(length<=28.375) sizeLength = 7;
-                else if(length<=30.25) {
-                    sizeLength = 8.75;
-                    sizeLength2 = 8;
-                }
-                else if(length<=33.5) {
-                    sizeLength = 10.75;
-                    sizeLength2 = 10;
-                }
-                else if(length<=36.75) {
-                    sizeLength = 12.75;
-                    sizeLength2 = 12;
-                }
-                else if(length<=39) {
-                    sizeLength = 14.75;
-                    sizeLength2 = 14;
-                }
-                else if(length<=41) {
-                    sizeLength = 16.75;
-                    sizeLength2 = 16;
-                }
-                else if(length<=42.25) {
-                    sizeLength = 18.75;
-                    sizeLength2 = 18;
-                }
-                else if(length<=43.5) {
-                    sizeLength = 20.75;
-                    sizeLength2 = 20;
-                }
+                if(length<=23.5) sizeLength = 4;
+                else if(length<=25) sizeLength = 5;
+                else if(length<=27) sizeLength = 6;
+                else if(length<=28.5) sizeLength = 8.5;
+                else if(length<=29) sizeLength = 7;             
+                else if(length<=30.25) sizeLength = 10.5;            
+                else if(length<=31.25) sizeLength = 8;
+                else if(length<=32.25) sizeLength = 12.5;
+                else if(length<=33.25) sizeLength = 10;           
+                else if(length<=34.25) sizeLength = 14.5;
+                else if(length<=35.5) sizeLength = 16.5;
+                else if(length<=36) sizeLength = 12;
+                else if(length<=37) sizeLength = 14;
+                else if(length<=37.5) sizeLength = 18.5;
+                else if(length<=38.5) sizeLength = 16;
+                else if(length<=39) sizeLength = 18;
+                else if(length<=39.5) sizeLength = 20.5;
+                else if(length<=41.25) sizeLength = 20;
                 else sizeLength = 500;
 
                 return sizeLength;
